@@ -1,5 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@import "@nuxt/ui";
 
-/* 您的自定义 CSS 可以放在这里 */
+/* @layer base {
+  html {
+    font-family: 'Inter', sans-serif;
+  }
+} */
