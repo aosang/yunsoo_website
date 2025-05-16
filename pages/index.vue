@@ -12,10 +12,10 @@ import Footer from '@/components/Footer.vue'
 import Home from '@/components/Home.vue'
 
 useHead({
-  title: '云疏资产管理系统',
+  title: '云梳资产管理系统',
   meta: [{ 
     name: 'description', 
-    content: '云疏资产管理系统' 
+    content: '云梳资产管理系统' 
   }]
 })
 </script>

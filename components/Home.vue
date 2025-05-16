@@ -1,5 +1,5 @@
 <template>
-  <div class="w-[1160px] mx-auto mt-10">
+  <div class="w-[1160px] mx-auto mt-10 mb-[96px]">
     <div class="w-[1160px] text-center">
       <h1 class="text-[44px] font-bold">Email advertising done right</h1>
       <h2 class="text-[14px] text-[#818890] mt-2">
@@ -26,6 +26,9 @@
         <UIcon name="i-lucide-circle-check" class="size-5 text-blue-500" />
         <p class="font-bold">151.3+ Subscribers</p>
       </div>
+    </div>
+    <div class="mt-6">
+      <img src="/images/yunsoo_home.png" alt="yunsoo home" class="w-[100%]">
     </div>
   </div>
 </template>
