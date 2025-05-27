@@ -3,31 +3,46 @@
     <div class="w-[1160px] text-center">
       <h1 class="text-[44px] font-bold">轻量级IT资产管理系统</h1>
       <h2 class="text-[15px] text-[#818890] mt-2">
-        聚焦“易用、实用、高效”，实现对IT设备资产的规范化管理。
+        聚焦"易用、实用、高效"，实现对IT设备资产的规范化管理。
       </h2>
     </div>
     <div class="flex justify-center gap-4 mt-6">
-      <UModal v-model="isOpen" :prevent-scroll="false">
-        <UButton
-          color="secondary"
-          size="xl"
-          class="cursor-pointer"
-          @click="isOpen = true"
-        >
-          立即体验
-        </UButton>
-        <template #body>
-          <div></div>
-        </template>
-      </UModal>
       <UButton
-        variant="outline"
-        color="secondary"
+        color="blue"
         size="xl"
         class="cursor-pointer"
-        >下载产品资料</UButton
+        @click="openModal"
       >
+        立即体验
+      </UButton>
+
+      <UModal v-model="isOpen" prevent-close class="w-[500px]">
+        <UCard class="relative">
+          <div class="flex items-center justify-between">
+            <div class="text-[16px] font-bold">选择平台</div>
+            <UButton 
+              color="gray" 
+              variant="ghost" 
+              icon="i-heroicons-x-mark-20-solid"  
+              @click="isOpen = false" 
+            />
+          </div>
+          <UDivider class="mt-2" />
+          <!-- <div class="flex items-center justify-center">
+            <div class="w-[100px] h-[100px] bg-gray-200 rounded-full"></div>
+          </div> -->
+        </UCard>
+      </UModal>
+
+      <UButton
+        variant="outline"
+        color="blue"
+        class="cursor-pointer"
+      >
+        下载产品资料
+      </UButton>
     </div>
+
     <div class="flex justify-center gap-4 mt-6">
       <div class="flex items-center gap-1">
         <UIcon name="i-lucide-circle-check" class="size-5 text-blue-500" />
@@ -179,4 +194,11 @@ import { ref } from "vue";
 
 const isOpen = ref(false);
 
+const openModal = () => {
+  isOpen.value = true;
+}
+
+const closeModal = () => {
+  isOpen.value = false;
+}
 </script>

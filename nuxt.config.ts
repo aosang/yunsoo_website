@@ -10,7 +10,10 @@ export default defineNuxtConfig({
     './public/css/main.css'
   ],
   ui: {
-    fonts: false
+    global: false
+  },
+  experimental: {
+    payloadExtraction: false
   },
   ssr: true,
   nitro: {

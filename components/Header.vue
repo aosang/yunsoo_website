@@ -20,7 +20,7 @@
       <div class="flex items-center">
         <UButton 
           size="xl" 
-          color="secondary" 
+          color="blue" 
           class="cursor-pointer"
           icon="i-lucide-rocket"
         >
